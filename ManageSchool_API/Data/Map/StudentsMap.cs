@@ -12,11 +12,6 @@ public class StudentsMap : IEntityTypeConfiguration<Student>
 
         builder.HasKey(s=>s.Id);
 
-        /*builder.HasMany(s=>s.SchoolSubjects)
-            .WithOne(s=>s.Student)
-            .HasForeignKey(s=>s.IdStudent)
-            .HasPrincipalKey(s=>s.Id);*/
-
         builder.Property(s=>s.IdSchoolClassroom)
             .HasColumnName("IDSCHOOLCLASSROOM");
     }

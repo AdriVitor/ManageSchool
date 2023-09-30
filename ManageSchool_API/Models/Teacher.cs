@@ -9,6 +9,4 @@ public class Teacher : Base{
     public int IdSchool { get; set; }
     public string Email { get; set; }
     public string Password { get; set; }
-
-    //public ICollection<SchoolSubject>? SchoolSubjects { get; set; }
 }

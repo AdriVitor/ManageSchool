@@ -11,10 +11,5 @@ public class TeacherMap : IEntityTypeConfiguration<Teacher>
         builder.ToTable("TEACHER");
 
         builder.HasKey(t=>t.Id);
-
-        /*builder.HasMany(t=>t.SchoolSubjects)
-            .WithOne(t=>t.Teacher)
-            .HasForeignKey(t=>t.IdTeacher)
-            .HasPrincipalKey(t=>t.Id);*/
     }
 }
